@@ -26,7 +26,7 @@
                 </div>
             </div>
             <div id="form">
-                <form>
+                <form action="#" method="post">
                     <div id="white-board">
                         <p>Let's do this!</p>
                         <div class="input-row">
@@ -52,11 +52,12 @@
                         <div class="input-row">
                             <div id="pw">
                                 <div><label for="password">Password</label></div>
-                                <div><input type="password" id="password" name="password"></div>
+                                <div><input type="password" id="password" name="password" class="invalid"></div>
+                                <div class="pw-invalid-msg">* Passwords do not match</div>
                             </div>
                             <div id="confirm-pw">
                                 <div><label for="confirm_password">Confirm Password</label></div>
-                                <div><input type="password" id="confirm_password" name="confirm_password"></div>
+                                <div><input type="password" id="confirm_password" name="confirm_password" class="invalid"></div>
                             </div>
                         </div>
                     </div>

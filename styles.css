@@ -16,6 +16,10 @@
     --theme-bg-color: rgb(233, 243, 248);
 }
 
+body {
+    background-color: var(--theme-bg-color);
+}
+
 #main {
     height: 100vh;
     display: flex;
@@ -92,7 +96,8 @@
     font-size: 1.5rem;
 }
 
-p {
+#intro p,
+#submit-login {
     margin-top: 1.5rem;
 }
 
@@ -119,11 +124,32 @@ p {
     font-size: 0.8rem;
 }
 
-#white-board input {
+input {
+    -webkit-appearance: none;
+    appearance: none;
+    
     width: clamp(10rem, 15rem + 5vw, 22rem);
-    margin-top: 0.2rem;
+    border: 0.1rem solid rgb(229, 231, 235);
+    border-radius: 0.3rem;
+    margin: 0.2rem 0 0 0;
     padding: 0.4rem;
     font-size: 0.9rem;
+}
+
+input:focus {
+    outline-style: none;
+
+    border-color: rgb(0, 0, 255);
+    box-shadow: 0.2rem 0.2rem 5px rgb(218, 218, 218);
+}
+
+input:invalid, input.invalid {
+    border-color: rgb(255, 0, 0);
+}
+
+.pw-invalid-msg {
+    color: red;
+    font-size: 0.8rem;
 }
 
 #submit-button-label {
