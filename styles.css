@@ -8,6 +8,7 @@
     margin: 0;
     padding: 0;
     font-family: Tahoma, sans-serif;
+    font-size: 24px;
 }
 
 #main {
@@ -34,9 +35,13 @@
     align-items: center;
 }
 
+#banner img {
+    height: 9.5vh;
+}
+
 #banner .text {
     font-family: banner-font, Tahoma, sans-serif;
-    font-size: 70px;
+    font-size: 8vh;
     color: white;
     max-height: 0.8em;
 }
@@ -45,6 +50,8 @@
     position: absolute;
     bottom: 40px;
     width: 100%;
+    padding: 0 10%;
+    font-size: 0.8rem;
     text-align: center;
     color: white;
 }
