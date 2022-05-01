@@ -1,6 +1,6 @@
 @font-face {
     font-family: banner-font;
-    src: url(norse-bold.otf);
+    src: url('../../odin-sign-up-form/odin-font.ttf');
 }
 
 * {
@@ -49,10 +49,9 @@ body {
 }
 
 #banner .text {
-    font-family: banner-font, Tahoma, sans-serif;
+    font-family: banner-font, 'Brush Script MT', sans-serif;
     font-size: 6rem;
     color: white;
-    max-height: 0.8em;
 }
 
 #footer {
