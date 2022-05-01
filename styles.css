@@ -1,3 +1,8 @@
+@font-face {
+    font-family: banner-font;
+    src: url(norse-bold.otf);
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -28,8 +33,10 @@
 }
 
 #banner .text {
-    font-size: 60px;
+    font-family: banner-font, sans-serif;
+    font-size: 70px;
     color: white;
+    max-height: 0.8em;
 }
 
 #footer {
