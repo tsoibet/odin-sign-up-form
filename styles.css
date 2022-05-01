@@ -18,6 +18,7 @@
     position: relative;
     width: 30vw;
     background-image: url("photo-bg.jpeg");
+    background-size: cover;
 }
 
 #banner {
