@@ -9,6 +9,10 @@
     padding: 0;
     font-family: Tahoma, sans-serif;
     font-size: min(6px + 0.5vw + 0.5vh, 30px);
+
+    --right-col-padding: min(4vh, 3rem);
+    --input-box-margin: calc(var(--right-col-padding)/2);
+    --theme-color: rgb(43, 96, 145);
 }
 
 #main {
@@ -61,9 +65,6 @@
     background-color: lightgray;
     display: flex;
     flex-direction: column;
-
-    --right-col-padding: min(4vh, 3rem);
-    --input-box-margin: calc(var(--right-col-padding)/2);
 }
 
 #intro,
@@ -119,4 +120,22 @@ p {
 #white-board input {
     width: clamp(10rem, 15rem + 5vw, 22rem);
     margin-top: 0.2rem;
+    padding: 0.4rem;
+    font-size: 0.9rem;
+}
+
+button {
+    padding: 1rem 2rem;
+    background-color: var(--theme-color);
+    color: white;
+}
+
+a {
+    font-weight: bold;
+    color: var(--theme-color);
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--theme-color);
 }
