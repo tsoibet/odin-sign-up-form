@@ -21,8 +21,7 @@ body {
 }
 
 #main {
-    height: 100vh;
-    min-height: 400px;
+    min-height: 100vh;
     display: flex;
 }
 
@@ -78,13 +77,11 @@ body {
 }
 
 #intro {
-    height: 35vh;
-    position: relative;
+    padding-top: calc(5rem + 5vw - 5vh);   
 }
 
 #intro .text {
     width: 80%;
-    position: absolute;
     left: var(--right-col-padding);
     bottom: var(--right-col-padding);
 }
@@ -100,10 +97,6 @@ body {
     margin-top: 1.5rem;
 }
 
-#form {
-    height: 65vh;
-}
-
 #white-board {
     padding: var(--input-box-margin) var(--right-col-padding);
     background-color: white;
@@ -112,7 +105,7 @@ body {
 
 .input-row {
     display: flex;
-/*    flex-wrap: wrap;*/
+    flex-wrap: wrap;
     gap: var(--input-box-margin);
     margin: var(--input-box-margin) 0;
 }
